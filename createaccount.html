@@ -6,16 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="newaccvalidation.js" type="text/javascript"></script>
   </head>
   <body>
     <main>
-      <div id="create-acc-menu">
-        <form action="">
-          <label for="" class="label">Employee Name</label>
-          <input type="text" name="" class="input-item" /><br />
-          <label for="" class="label">Employee Role</label>
-          <input type="text" name="" class="input-item" /><br />
-          <button type="submit" id="create-btn" class="btn">
+      <div id="menu">
+        <form
+          method="POST"
+          action=""
+          name="form"
+          id="form"
+          onsubmit="return validateForm(form);"
+        >
+          <label for="" class="label">Employee Full Name: </label>
+          <input type="text" name="fname" id="fname" class="input-item" /><br />
+          <label for="" class="label">Employee Role: </label>
+          <input type="text" name="role" id="role" class="input-item" /><br />
+          <label for="" class="label">Email Address: </label>
+          <input
+            type="text"
+            name="emailAddress"
+            id="emailAddress"
+            class="input-item"
+          /><br />
+          <label for="" class="label">Phone Number: </label>
+          <input
+            type="text"
+            name="number"
+            id="number"
+            class="input-item"
+          /><br />
+          <label for="" class="label">Date of Employement: DD/MM/YYYY</label>
+          <input
+            type="text"
+            name="empDate"
+            id="empDate"
+            class="input-item"
+          /><br />
+          <button type="submit" name="submit-form" id="submit-form" class="btn">
             Create Account
           </button>
         </form>

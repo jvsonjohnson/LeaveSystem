@@ -15,9 +15,9 @@ a {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 60px;
   display: grid;
-  grid-template-columns: 1fr 200px 1fr;
+  grid-template-columns: 1fr 300px 1fr;
   grid-template-areas: ". menu .";
 }
 
@@ -26,23 +26,21 @@ main {
   text-align: center;
 }
 
+#menu h1 {
+  font-size: 30px;
+}
+#menu h3 {
+  margin-top: 20px;
+}
 .menuitem {
-  padding: 30px 20px;
+  margin-top: 10px;
+  padding: 20px 20px;
   border: 1px solid black;
   cursor: pointer;
 }
 
 .menuitem:hover {
   background-color: #98c0df;
-}
-
-#create-acc-menu {
-  grid-area: menu;
-  text-align: center;
-}
-
-#apply-menu {
-  grid-area: menu;
 }
 
 .btn {
@@ -52,6 +50,55 @@ main {
 }
 
 input {
+  margin: 10px;
+  padding: 5px 40px;
+}
+
+form label {
+  text-align: center;
+}
+
+.results li {
+  text-align: center;
+  padding-top: 20px;
+  justify-items: center;
+}
+
+.results p {
+  text-align: center;
+  padding-top: 20px;
+  justify-items: center;
+}
+.leave {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+}
+
+.leave:hover {
+  color: burlywood;
+}
+
+.emp-leave {
+  cursor: pointer;
+}
+.emp-leave:hover {
+  color: burlywood;
+}
+
+#leave-view {
+  grid-area: menu;
+}
+
+#menu button {
   margin: 20px;
-  padding: 10px;
+}
+
+select {
+  margin: 30px 0;
+}
+
+.errorDetected {
+  border: 2px solid red;
 }
