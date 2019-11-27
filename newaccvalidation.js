@@ -1,4 +1,4 @@
-function validateForm(form) {
+function validateNewAcc(form) {
   var InputData = {
     fname: form.fname.value,
     role: form.role.value,
