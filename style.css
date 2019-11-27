@@ -49,10 +49,12 @@ header {
   padding-left: 20px;
 }
 
-i {
+.icon {
   margin-right: 100px;
   margin-top: 10px;
   cursor: pointer;
+  width: 18px;
+  height: 18px;
 }
 
 #menu h3 {
