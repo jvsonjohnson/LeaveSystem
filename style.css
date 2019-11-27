@@ -25,28 +25,45 @@ main {
   margin-top: 60px;
   grid-area: menu;
   text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 header {
-  height: 10vh;
+  height: 12vh;
   background-color: cadetblue;
 }
 
 .header h1 {
-  padding-top: 20px;
-  text-align: center;
-  font-size: 30px;
+  font-size: 22px;
   font-family: montserrat;
   font-weight: bold;
+  margin-top: 14px;
 }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+i {
+  margin-right: 100px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
 #menu h3 {
   margin-top: 20px;
 }
 .menuitem {
   margin-top: 10px;
   padding: 20px 20px;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .menuitem:hover {
