@@ -4,9 +4,7 @@ function validateNewAcc(form) {
     role: form.role.value,
     emailAddress: form.emailAddress.value,
     number: form.number.value,
-    empDate: form.empDate.value,
-    days: form.days.value,
-    purpose: form.purpose.value
+    empDate: form.empDate.value
   };
 
   checkEmptyFields(InputData);
